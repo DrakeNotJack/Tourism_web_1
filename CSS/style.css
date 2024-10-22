@@ -68,22 +68,22 @@ footer {
 
 /* 社交媒体按钮样式 */
 .social-button {
-    width: 3rem; /* 默认按钮宽度 */
-    height: 3rem; /* 默认按钮高度 */
     border: 2px solid #ffcc99; /* 外圈橙色细线 */
     border-radius: 50%; /* 圆形 */
     margin: 0 5px; /* 按钮之间的间距 */
     display: flex; /* 使图标居中 */
     align-items: center; /* 垂直居中 */
     justify-content: center; /* 水平居中 */
+    width: 2.5rem; /* 使用rem单位控制按钮大小 */
+    height: 2.5rem;
     background-color: #ffcc99; /* 中间填充颜色 */
     transition: background-color 0.3s, filter 0.3s; /* 添加过渡效果 */
 }
 
 .social-button img {
-    width: 50%; /* 图标宽度为按钮宽度的50% */
-    height: 50%; /* 图标高度为按钮高度的50% */
-    filter: brightness(0) saturate(100%) invert(74%) sepia(92%) saturate(4000%) hue-rotate(356deg) brightness(93%) contrast(104%);
+    width: 1.25rem; /* 图标大小为按钮的一半 */
+    height: 1.25rem;
+    filter: brightness(0) saturate(100%) invert(74%) sepia(92%) saturate(4000%) hue-rotate(356deg) brightness(93%) contrast(104%); /* 橙色效果 */
 }
 
 .social-button:hover {
@@ -92,6 +92,27 @@ footer {
 
 .social-button:hover img {
     filter: brightness(0) invert(1); /* 悬浮时图标变为白色 */
+}
+
+/* 媒体查询：在屏幕宽度小于768px时 */
+@media (max-width: 768px) {
+    h3 {
+        font-size: 1.5rem; /* 在小屏幕上减小标题大小 */
+    }
+
+    .navbar {
+        flex-direction: column; /* 导航栏在小屏幕上垂直排列 */
+    }
+
+    .social-button {
+        width: 2rem; /* 小屏幕下按钮变小 */
+        height: 2rem;
+    }
+
+    .social-button img {
+        width: 1rem; /* 小屏幕下图标更小 */
+        height: 1rem;
+    }
 }
 
 /* 表单样式 */
@@ -103,7 +124,6 @@ form {
 .form-label {
     font-weight: bold; /* 标签加粗 */
 }
-
 
 /* “联系我们”按钮样式 */
 .btn-contact {
@@ -125,25 +145,4 @@ form {
 /* 避免按钮文本变大 */
 .btn-contact span {
     display: inline-block; /* 确保文本作为块元素存在 */
-}
-
-/* 媒体查询 */
-@media (max-width: 768px) {
-    h3 {
-        font-size: 1.5rem; /* 在小屏幕上减小标题大小 */
-    }
-
-    .navbar {
-        flex-direction: column; /* 导航栏在小屏幕上垂直排列 */
-    } /* 这里要关闭 .navbar 的花括号 */
-
-    .social-button {
-        width: 2rem; /* 小屏幕下按钮变小 */
-        height: 2rem;
-    }
-
-    .social-button img {
-        width: 1rem; /* 小屏幕下图标更小 */
-        height: 1rem;
-    }
 }
