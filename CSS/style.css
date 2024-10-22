@@ -68,8 +68,8 @@ footer {
 
 /* 社交媒体按钮样式 */
 .social-button {
-    width: 5%; /* 按钮宽度为5% */
-    height: 5%; /* 按钮高度为5% */
+    width: 3rem; /* 默认按钮宽度 */
+    height: 3rem; /* 默认按钮高度 */
     border: 2px solid #ffcc99; /* 外圈橙色细线 */
     border-radius: 50%; /* 圆形 */
     margin: 0 5px; /* 按钮之间的间距 */
