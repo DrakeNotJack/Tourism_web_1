@@ -74,20 +74,6 @@ footer {
     display: flex; /* 使图标居中 */
     align-items: center; /* 垂直居中 */
     justify-content: center; /* 水平居中 */
-    width: 40px; /* 按钮宽度 */
-    height: 40px; /* 按钮高度 */
-    background-color: #ffcc99; /* 中间填充颜色 */
-    transition: background-color 0.3s, filter 0.3s; /* 添加过渡效果 */
-}
-
-/* 社交媒体按钮样式 */
-.social-button {
-    border: 2px solid #ffcc99; /* 外圈橙色细线 */
-    border-radius: 50%; /* 圆形 */
-    margin: 0 5px; /* 按钮之间的间距 */
-    display: flex; /* 使图标居中 */
-    align-items: center; /* 垂直居中 */
-    justify-content: center; /* 水平居中 */
     width: 2.5rem; /* 使用rem单位控制按钮大小 */
     height: 2.5rem;
     background-color: #ffcc99; /* 中间填充颜色 */
