@@ -103,16 +103,17 @@ footer {
     .navbar {
         flex-direction: column; /* 导航栏在小屏幕上垂直排列 */
     }
-
+    
     .social-button {
-        width: 2rem; /* 小屏幕下按钮变小 */
-        height: 2rem;
+        width: 2rem !important; /* 小屏幕下按钮变小 */
+        height: 2rem !important;
     }
 
     .social-button img {
-        width: 1rem; /* 小屏幕下图标更小 */
-        height: 1rem;
+        width: 1rem !important; /* 小屏幕下图标更小 */
+        height: 1rem !important;
     }
+}
 }
 
 /* 表单样式 */
