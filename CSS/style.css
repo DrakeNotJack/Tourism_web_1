@@ -149,10 +149,10 @@ form {
 .btn-contact::before {
     content: ''; /* 创建伪元素 */
     position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
     border-radius: 20px; /* 与按钮相同的圆角 */
     background-color: #ffcc99; /* 保持与按钮相同的背景颜色 */
     z-index: -1; /* 伪元素位于按钮下方 */
