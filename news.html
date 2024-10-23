@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页 - Manyou Holiday</title> <!-- 标签页上的字 -->
+    <title>新闻 - Manyou Holiday</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- 导航栏 -->
@@ -24,98 +24,79 @@
                         <a class="nav-link" href="services.html">服务 (Services)</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="news.html">新闻 (News)</a>
+                        <a class="nav-link active" href="news.html">新闻 (News)</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">关于我们 (About Us)</a>
                     </li>
                 </ul>
-                <a href="contact.html" class="btn btn-contact">联系我们 (Contact Us)</a>
+                <a href="contact.html" class="btn btn-primary">联系我们 (Contact Us)</a>
             </div>
         </div>
     </nav>
 
-    <!-- 轮播图 -->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/slide1.jpg" class="d-block w-100" alt="Slide 1">
-            </div>
-            <div class="carousel-item">
-                <img src="images/slide2.jpg" class="d-block w-100" alt="Slide 2">
-            </div>
-            <div class="carousel-item">
-                <img src="images/slide3.jpg" class="d-block w-100" alt="Slide 3">
-            </div>
+    <!-- 标签按钮 -->
+    <div class="container mt-4">
+        <div class="btn-group" role="group" aria-label="Button group">
+            <button type="button" class="btn btn-primary" onclick="filterContent('all')">全部</button>
+            <button type="button" class="btn btn-primary" onclick="filterContent('singapore')">新加坡</button>
+            <button type="button" class="btn btn-primary" onclick="filterContent('japan')">日本</button>
+            <button type="button" class="btn btn-primary" onclick="filterContent('europe')">欧洲</button>
+            <button type="button" class="btn btn-primary" onclick="filterContent('thailand')">泰国</button>
+            <button type="button" class="btn btn-primary" onclick="filterContent('vietnam')">越南</button>
+            <button type="button" class="btn btn-primary" onclick="filterContent('cambodia')">柬埔寨</button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 
     <!-- 栏目部分 -->
-    <section class="mt-5">
-        <div class="container-fluid">
-            <div class="row mb-4">
-                <div class="col-12 bg-light-orange text-white text-center p-4">
-                    <h3>栏目 1</h3>
-                    <p>这是栏目 1 的内容。</p>
+    <section class="container mt-5">
+        <h2 class="text-center">我们的旅游服务</h2>
+        <div class="row">
+            <div class="col-md-4 item singapore">
+                <div class="card mb-4">
+                    <img src="images/singapore.jpg" class="card-img-top" alt="新加坡">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="singapore-trip.html" class="text-dark font-weight-bold">探索新加坡的精彩之旅</a></h5>
+                        <p class="card-text">10/17/2024</p>
+                        <p class="card-text">加入我们的新加坡本地旅游团，体验这个现代与传统完美结合的城市，享受美食、购物与文化的多重魅力。</p>
+                    </div>
                 </div>
             </div>
-            <div class="row mb-4">
-                <div class="col-12 bg-white text-center p-4">
-                    <h3>栏目 2</h3>
-                    <p>这是栏目 2 的内容。</p>
+            <div class="col-md-4 item japan">
+                <div class="card mb-4">
+                    <img src="images/tokyo.jpg" class="card-img-top" alt="日本东京">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="tokyo-trip.html" class="text-dark font-weight-bold">探索日本东京的精彩之旅</a></h5>
+                        <p class="card-text">10/17/2024</p>
+                        <p class="card-text">加入我们的东京旅游团，体验这个现代与传统完美结合的城市，享受美食、购物与文化的多重魅力。</p>
+                    </div>
                 </div>
             </div>
-            <div class="row mb-4">
-                <div class="col-12 bg-light-orange text-white text-center p-4">
-                    <h3>栏目 3</h3>
-                    <p>这是栏目 3 的内容。</p>
+            <div class="col-md-4 item europe">
+                <div class="card mb-4">
+                    <img src="images/europe.jpg" class="card-img-top" alt="欧洲">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="europe-trip.html" class="text-dark font-weight-bold">浪漫欧洲之旅：巴黎、罗马、巴塞罗那三城游</a></h5>
+                        <p class="card-text">10/17/2024</p>
+                        <p class="card-text">畅游欧洲最具魅力的三大城市，感受巴黎的浪漫、罗马的历史以及巴塞罗那的艺术气息，一次旅行三重享受。</p>
+                    </div>
                 </div>
             </div>
-            <div class="row mb-4">
-                <div class="col-12 bg-white text-center p-4">
-                    <h3>栏目 4</h3>
-                    <p>这是栏目 4 的内容。</p>
+            <div class="col-md-4 item thailand vietnam cambodia">
+                <div class="card mb-4">
+                    <img src="images/southeast-asia.jpg" class="card-img-top" alt="东南亚">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="southeast-asia-trip.html" class="text-dark font-weight-bold">东南亚探险之旅：泰国、越南、柬埔寨三国游</a></h5>
+                        <p class="card-text">10/17/2024</p>
+                        <p class="card-text">一次旅行，探访东南亚三大热门目的地，感受泰国的热情、越南的悠闲与柬埔寨的神秘文化。</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 最下面的栏目 -->
+    <!-- 页脚 -->
     <footer class="bg-light text-center mt-5 py-4">
-        <div class="container-fluid">
-            <div class="row mb-3">
-                <div class="col-md-6 text-start">
-                    <strong>公司</strong><br>
-                    <a href="about.html">关于我们</a><br>
-                    <a href="contact.html">联系我们</a>
-                </div>
-                <div class="col-md-6 text-end">
-                    <img src="images/logo.png" alt="Company Logo" class="img-fluid mb-2" style="max-height: 50px;">
-                    <div class="d-flex justify-content-end">
-                        <a href="https://facebook.com" class="social-button">
-                            <img src="images/facebook-icon.png" alt="Facebook" />
-                        </a>
-                        <a href="https://instagram.com" class="social-button">
-                            <img src="images/instagram-icon.png" alt="Instagram" />
-                        </a>
-                        <a href="https://whatsapp.com" class="social-button">
-                            <img src="images/whatsapp-icon.png" alt="WhatsApp" />
-                        </a>
-                        <a href="https://tiktok.com" class="social-button">
-                            <img src="images/tiktok-icon.png" alt="TikTok" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <p>&copy; 2024 Manyou Holiday. All rights reserved.</p>
     </footer>
 
