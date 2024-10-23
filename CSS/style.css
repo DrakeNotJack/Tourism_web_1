@@ -50,14 +50,21 @@ footer {
 
 /* 轮播图样式 */
 .carousel-item {
-    height: 500px; /* 设置轮播图的高度 */
+    height: 50vh; /* 默认轮播图高度为屏幕高度的50% */
 }
 
 .carousel-item img {
-    width: 100%; /* 让图片宽度占满整个轮播项 */
-    height: 100%; /* 让图片高度占满整个轮播项 */
-    object-fit: cover; /* 保持图片的比例，同时裁剪图片以适应容器 */
+    width: 100%; /* 图片宽度占满整个轮播项 */
+    height: 100%; /* 图片高度占满整个轮播项 */
+    object-fit: cover; /* 保持图片比例，并裁剪适应容器 */
 }
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 40vh; /* 在小屏幕上高度为40%视口高度 */
+    }
+}
+
 
 /* 卡片样式 */
 .card {
