@@ -35,37 +35,60 @@
         </div>
     </nav>
 
-    <!-- 新闻内容 -->
+    <!-- 标签按钮 -->
+    <div class="container mt-4">
+        <div class="btn-group" role="group" aria-label="Button group">
+            <button type="button" class="btn btn-primary" onclick="filterContent('all')">全部</button>
+            <button type="button" class="btn btn-primary" onclick="filterContent('singapore')">新加坡</button>
+            <button type="button" class="btn btn-primary" onclick="filterContent('japan')">日本</button>
+            <button type="button" class="btn btn-primary" onclick="filterContent('europe')">欧洲</button>
+            <button type="button" class="btn btn-primary" onclick="filterContent('thailand')">泰国</button>
+            <button type="button" class="btn btn-primary" onclick="filterContent('vietnam')">越南</button>
+            <button type="button" class="btn btn-primary" onclick="filterContent('cambodia')">柬埔寨</button>
+        </div>
+    </div>
+
+    <!-- 栏目部分 -->
     <section class="container mt-5">
-        <h2 class="text-center">最新新闻</h2>
+        <h2 class="text-center">我们的旅游服务</h2>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 item singapore">
                 <div class="card mb-4">
-                    <img src="images/news1.jpg" class="card-img-top" alt="新闻1">
+                    <img src="images/singapore.jpg" class="card-img-top" alt="新加坡">
                     <div class="card-body">
-                        <h5 class="card-title">新闻标题一</h5>
-                        <p class="card-text">新闻一的描述。</p>
-                        <a href="#" class="btn btn-primary">阅读更多</a>
+                        <h5 class="card-title"><a href="singapore-trip.html" class="text-dark font-weight-bold">探索新加坡的精彩之旅</a></h5>
+                        <p class="card-text">10/17/2024</p>
+                        <p class="card-text">加入我们的新加坡本地旅游团，体验这个现代与传统完美结合的城市，享受美食、购物与文化的多重魅力。</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 item japan">
                 <div class="card mb-4">
-                    <img src="images/news2.jpg" class="card-img-top" alt="新闻2">
+                    <img src="images/tokyo.jpg" class="card-img-top" alt="日本东京">
                     <div class="card-body">
-                        <h5 class="card-title">新闻标题二</h5>
-                        <p class="card-text">新闻二的描述。</p>
-                        <a href="#" class="btn btn-primary">阅读更多</a>
+                        <h5 class="card-title"><a href="tokyo-trip.html" class="text-dark font-weight-bold">探索日本东京的精彩之旅</a></h5>
+                        <p class="card-text">10/17/2024</p>
+                        <p class="card-text">加入我们的东京旅游团，体验这个现代与传统完美结合的城市，享受美食、购物与文化的多重魅力。</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 item europe">
                 <div class="card mb-4">
-                    <img src="images/news3.jpg" class="card-img-top" alt="新闻3">
+                    <img src="images/europe.jpg" class="card-img-top" alt="欧洲">
                     <div class="card-body">
-                        <h5 class="card-title">新闻标题三</h5>
-                        <p class="card-text">新闻三的描述。</p>
-                        <a href="#" class="btn btn-primary">阅读更多</a>
+                        <h5 class="card-title"><a href="europe-trip.html" class="text-dark font-weight-bold">浪漫欧洲之旅：巴黎、罗马、巴塞罗那三城游</a></h5>
+                        <p class="card-text">10/17/2024</p>
+                        <p class="card-text">畅游欧洲最具魅力的三大城市，感受巴黎的浪漫、罗马的历史以及巴塞罗那的艺术气息，一次旅行三重享受。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 item thailand vietnam cambodia">
+                <div class="card mb-4">
+                    <img src="images/southeast-asia.jpg" class="card-img-top" alt="东南亚">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="southeast-asia-trip.html" class="text-dark font-weight-bold">东南亚探险之旅：泰国、越南、柬埔寨三国游</a></h5>
+                        <p class="card-text">10/17/2024</p>
+                        <p class="card-text">一次旅行，探访东南亚三大热门目的地，感受泰国的热情、越南的悠闲与柬埔寨的神秘文化。</p>
                     </div>
                 </div>
             </div>
