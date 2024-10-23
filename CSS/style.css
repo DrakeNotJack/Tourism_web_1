@@ -173,3 +173,23 @@ form {
     display: inline-block; /* 确保文本作为块元素存在 */
     font-size: 1rem; /* 保持文字的固定大小 */
 }
+
+
+
+footer .text-start strong {
+    font-size: 1.5rem; /* 增大“公司”标题的字号 */
+    color: #333; /* 设置字体颜色，可以根据需要调整 */
+}
+
+footer .text-start a {
+    display: inline-block; /* 让链接成为块元素，便于调整样式 */
+    font-size: 1.2rem; /* 增大链接的字号 */
+    color: #007bff; /* 设置链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    margin: 5px 0; /* 增加上下间距 */
+    transition: color 0.3s; /* 增加悬浮时的过渡效果 */
+}
+
+footer .text-start a:hover {
+    color: #0056b3; /* 悬浮时改变链接颜色 */
+}
