@@ -140,7 +140,9 @@ form {
 
 .btn-contact:hover {
     transform: scale(1.05); /* 鼠标悬浮时放大 */
-    border: 2px solid transparent; /* 悬浮时保持边框透明 */
+    background-color: #ffcc99; /* 保持背景色橙色 */
+    color: white; /* 保持文字颜色为白色 */
+    border: 2px solid transparent; /* 保持边框透明 */
 }
 
 /* 避免按钮文本变大 */
