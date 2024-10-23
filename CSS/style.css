@@ -193,3 +193,12 @@ footer .text-start a {
 footer .text-start a:hover {
     color: #0056b3; /* 悬浮时改变链接颜色 */
 }
+
+
+.item {
+    display: none; /* 默认隐藏所有内容 */
+}
+
+.item.active {
+    display: block; /* 只有带有.active类的内容会显示 */
+}
