@@ -161,7 +161,7 @@ form {
 }
 
 .btn-contact:hover::before {
-    transform: scale(1.1); /* 鼠标悬浮时放大外圈 */
+    transform: scale(1.05); /* 鼠标悬浮时放大外圈 */
 }
 
 .btn-contact:hover {
