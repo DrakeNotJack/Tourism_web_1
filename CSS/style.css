@@ -128,24 +128,42 @@ form {
 
 /* “联系我们”按钮样式 */
 .btn-contact {
+    position: relative; /* 确保可以使用 ::before 伪元素定位 */
     border-radius: 20px; /* 圆角按钮 */
     background-color: #ffcc99; /* 按钮背景色 */
     color: white; /* 按钮文字颜色 */
     padding: 10px 20px; /* 内边距 */
     font-size: 1rem; /* 固定按钮文字大小 */
     display: inline-block; /* 确保按钮是块级元素 */
-    border: 2px solid transparent; /* 初始边框为透明，防止按钮大小变化 */
-    transition: transform 0.2s; /* 添加对变换的过渡效果 */
+    border: 2px solid transparent; /* 初始边框为透明 */
+    text-align: center; /* 文字居中 */
+    z-index: 1; /* 确保文字位于最上层 */
+}
+
+.btn-contact::before {
+    content: ''; /* 创建伪元素 */
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 20px; /* 与按钮相同的圆角 */
+    background-color: #ffcc99; /* 保持与按钮相同的背景颜色 */
+    z-index: -1; /* 伪元素位于按钮下方 */
+    transition: transform 0.2s ease; /* 过渡效果 */
+    transform: scale(1); /* 默认状态 */
+}
+
+.btn-contact:hover::before {
+    transform: scale(1.1); /* 鼠标悬浮时放大外圈 */
 }
 
 .btn-contact:hover {
-    transform: scale(1.05); /* 鼠标悬浮时放大 */
-    background-color: #ffcc99; /* 保持背景色橙色 */
     color: white; /* 保持文字颜色为白色 */
-    border: 2px solid transparent; /* 保持边框透明 */
 }
 
 /* 避免按钮文本变大 */
 .btn-contact span {
     display: inline-block; /* 确保文本作为块元素存在 */
+    font-size: 1rem; /* 保持文字的固定大小 */
 }
